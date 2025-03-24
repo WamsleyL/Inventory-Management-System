@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Manufacturer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h2>Add New Manufacturer</h2>
+<form action="add_manufacturer.php" method="POST">
+<label for="manufacturer_name">Manufacturer Name:</label>
+<input type="text" name="manufacturer_name" id="manufacturer_name" required>
+ 
+            <button type="submit">Add Manufacturer</button>
+</form>
+ 
+        <!-- Back to Dashboard button (moved out of nested form) -->
+<form action="atsv2_index.php" method="get" style="margin-top: 20px;">
+<button type="submit">Back to Dashboard</button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Buyer</title>
+<link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
+</head>
+<body>
+<div class="container">
+<h2>Add New Buyer</h2>
+<form action="add_buyer.php" method="POST">
+<label for="first_name">First Name:</label>
+<input type="text" name="first_name" id="first_name" required>
+ 
+            <label for="last_name">Last Name:</label>
+<input type="text" name="last_name" id="last_name" required>
+ 
+            <label for="email">Email:</label>
+<input type="email" name="email" id="email">
+ 
+            <label for="phone_number">Phone Number:</label>
+<input type="text" name="phone_number" id="phone_number">
+ 
+            <button type="submit">Add Buyer</button>
+</form>
+ 
+        <!-- Working Back to Dashboard button -->
+<form action="atsv2_index.php" method="get" style="margin-top: 20px;">
+<button type="submit">Back to Dashboard</button>
+</form>
+</div>
+</body>
+</html>

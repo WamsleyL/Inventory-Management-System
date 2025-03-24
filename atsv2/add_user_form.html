@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New User</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Add New User</h2>
+    <div class="scrollable-content">
+        <form action="add_user.php" method="POST">
+            <label>Username:</label>
+            <input type="text" name="Username" required>
+
+            <label>Email:</label>
+            <input type="email" name="Email" required>
+
+            <label>Password:</label>
+            <input type="password" name="Password" required>
+
+            <label>Role:</label>
+            <select name="Role" required>
+                <option value="User">User</option>
+                <option value="Manager">Manager</option>
+                <option value="Admin">Admin</option>
+            </select>
+
+            <label>Status:</label>
+            <select name="Status" required>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+    <form action="atsv2_index.php" method="get" style="margin-top: 20px;">
+        <button type="submit">Back to Dashboard</button>
+        </form>
+</div>
+</body>
+</html>

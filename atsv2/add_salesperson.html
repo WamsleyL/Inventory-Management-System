@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Salesperson</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link your shared CSS -->
+</head>
+<body>
+<div class="container">
+<h2>Add New Salesperson</h2>
+<form action="add_salesperson.php" method="POST">
+<label for="salesperson_name">Salesperson Name:</label>
+<input type="text" name="salesperson_name" id="salesperson_name" required>
+ 
+            <button type="submit">Add Salesperson</button>
+</form>
+ 
+        <!--  Back to Dashboard button (separate form) -->
+<form action="atsv2_index.php" method="get" style="margin-top: 20px;">
+<button type="submit">Back to Dashboard</button>
+</form>
+</div>
+</body>
+</html>
